@@ -1325,6 +1325,23 @@
     .locals 4
 
     .prologue
+    const/4 v0, 0x0
+
+    #v0=(Null);
+    iput v0, p0, Lcom/android/emailcommon/provider/Policy;->mPasswordMode:I
+
+    iput-boolean v0, p0, Lcom/android/emailcommon/provider/Policy;->mRequireEncryption:Z
+
+    iput-boolean v0, p0, Lcom/android/emailcommon/provider/Policy;->mRequireEncryptionExternal:Z
+
+    iput-boolean v0, p0, Lcom/android/emailcommon/provider/Policy;->mRequireManualSyncWhenRoaming:Z
+
+    iput-boolean v0, p0, Lcom/android/emailcommon/provider/Policy;->mDontAllowCamera:Z
+
+    iput-boolean v0, p0, Lcom/android/emailcommon/provider/Policy;->mDontAllowAttachments:Z
+
+    iput-boolean v0, p0, Lcom/android/emailcommon/provider/Policy;->mDontAllowHtml:Z
+
     const/4 v3, 0x1
 
     #v3=(One);
